@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG Framework Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PG Framework Generator</h1>
+            <p>Turn Paul Graham's essays into actionable frameworks</p>
+        </header>
+
+        <div class="dropdown-container">
+            <select class="dropdown-select">
+                <option value="" disabled selected>Select an essay</option>
+                <option value="writesAndWriteNots">Writes and Write-Nots</option>
+                <option value="originsWokeness">The Origins of Wokeness</option>
+                <option value="startupIdeas">How to Get Startup Ideas</option>
+                <option value="doWork">How to Do Great Work</option>
+                <option value="writing">Writing Like You Talk</option>
+                <option value="makeMoney">How to Make Wealth</option>
+                <option value="disagree">How to Disagree</option>
+                <option value="think">How to Think</option>
+                <option value="learn">How to Learn</option>
+                <option value="ambitious">Ambitious Startup Ideas</option>
+                <option value="persuade">How to Persuade</option>
+                <option value="startupHub">How to Be Silicon Valley</option>
+                <option value="lifeShort">Life is Short</option>
+                <option value="writeUsefully">How to Write Usefully</option>
+                <option value="noob">Being a Noob</option>
+            </select>
+        </div>
+
+        <div id="frameworkGrid" class="framework-container">
+            <!-- Cards will be inserted here dynamically -->
+        </div>
+        
+        <div id="frameworkContent" class="hidden">
+            <h2 id="essayTitle"></h2>
+            <div class="framework-sections">
+                <div class="principles">
+                    <h3>Key Principles</h3>
+                    <ul id="principlesList"></ul>
+                </div>
+                <div class="checklist">
+                    <h3>Action Checklist</h3>
+                    <div id="actionChecklist"></div>
+                </div>
+                <div class="questions">
+                    <h3>Reflection Questions</h3>
+                    <ul id="questionsList"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-bar">
+        <a href="#" class="nav-item active">
+            <i class="fas fa-compass"></i>
+            <span>Frameworks</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-bookmark"></i>
+            <span>Saved</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </a>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html> 
